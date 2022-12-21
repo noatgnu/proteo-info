@@ -1,0 +1,40 @@
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.title {
+  font-size: 60px;
+  color: #65647C;
+}
+
+.subtitle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #65647C;
+}
+
+.page-center {
+  display: flex;
+  justify-content: center;
+  //align-items: stretch;
+  height: 70%;
+}
+
+.tool-card {
+  max-width: 300px;
+  margin: 50px;
+  align-self: center;
+}
+
+.tool-card-image {
+  max-height: 300px;
+}
