@@ -26,15 +26,19 @@
   display: flex;
   justify-content: center;
   //align-items: stretch;
-  height: 70%;
+  //height: 800px;
 }
 
 .tool-card {
-  max-width: 300px;
-  margin: 50px;
+  width: 300px;
+  margin: 25px;
   align-self: center;
 }
 
 .tool-card-image {
   max-height: 300px;
+}
+
+.card-content {
+  text-align: justify;
 }
