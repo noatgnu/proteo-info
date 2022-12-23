@@ -1,118 +1,29 @@
-<mat-divider></mat-divider>
-
-<div class="title-section">
-  <h1 class="title"><b>Proteoinformatics</b></h1>
+<mat-toolbar color="warn">
+  <mat-toolbar-row></mat-toolbar-row>
+</mat-toolbar>
+<div class="banner-image">
+  <div class="banner-text">
+    <h5 class="banner-main-text"><b>Proteoinformatics</b></h5>
+    <b>Your informatics resource for the proteome.</b>
+  </div>
 </div>
-<div class="subtitle-section">
-  <h5 class="subtitle"><b>Your informatics resource for the proteome</b></h5>
+<mat-divider></mat-divider>
+<div class="page-body">
+  <app-stuffs></app-stuffs>
 </div>
 <mat-divider></mat-divider>
+<footer class="footer-section">
+  <mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile>
 
-<mat-grid-list cols="3" rowHeight="700px">
-  <mat-grid-tile>
-    <mat-card class="tool-card">
-      <mat-card-header>
-        <mat-card-title>Curtain</mat-card-title>
-        <mat-card-subtitle>Sharing your total proteomics data with only a click</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="assets/curtain-logo.png" alt="Logo of Curtain" class="tool-card-image">
-      <mat-card-content>
-        <p>
-          For visualization of differential analysis of total proteomics data. Curtain enable easy sharing of differential analysis with no installation of additional software but your web browser.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <a mat-button type="button" href="https://curtain.proteo.info/" target="_blank">Go to</a>
-        <a mat-button type="button" href="https://github.com/noatgnu/curtain" target="_blank">GitHub</a>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card class="tool-card">
-      <mat-card-header>
-        <mat-card-title>Curtain PTM</mat-card-title>
-        <mat-card-subtitle>Sharing your PTM proteomics data with only a click</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="assets/curtainptm.png" alt="Logo of CurtainPTM" class="tool-card-image">
-      <mat-card-content>
-        <p>
-          For visualization of differential analysis of PTM proteomics data. Similar to Curtain, however, with PTM, the tool also aggregate extra data from other PTM databases for comparison between yours and the current knowledge base.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <a mat-button type="button" href="https://curtainptm.proteo.info/" target="_blank">Go to</a>
-        <a mat-button type="button" href="https://github.com/noatgnu/curtainPTM" target="_blank">GitHub</a>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card class="tool-card">
-      <mat-card-header>
-        <mat-card-title>Celsus</mat-card-title>
-        <mat-card-subtitle>Index all your differential analysis and provide a webui for easy access</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="assets/logo.png" alt="Logo of Celsus" class="tool-card-image">
-      <mat-card-content>
-        <p>
-          Have you ever wonder if a certain protein of interests have ever been found in your old data? Celsus can help you with centralizing your data analysis results and from there allows you to search for any of your data of interests across all documented datasets.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <a mat-button type="button" href="https://github.com/noatgnu/celsusdjango" target="_blank">GitHub</a>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card class="tool-card">
-      <mat-card-header>
-        <mat-card-title>sequal</mat-card-title>
-        <mat-card-subtitle>A Python package for all your amino acid sequence parsing need</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="assets/sequal.png" alt="Logo of Sequal" class="tool-card-image">
-      <mat-card-content>
-        <p class="card-content">
-          Sequal can be used for reading and formatting protein sequences with and without modifications whether or not they are placed as suffix or prefix to the amino acid residue. With it there is also a minimal support for certain Mass Spectrometry related task within the package.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <a mat-button type="button" href="https://github.com/noatgnu/sequal" target="_blank">GitHub</a>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card class="tool-card">
-      <mat-card-header>
-        <mat-card-title>Copica</mat-card-title>
-        <mat-card-subtitle>A static database of protein copy numbers from deep profiling proteomics data</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="assets/copica.png" alt="Logo of Copica" class="tool-card-image">
-      <mat-card-content>
-        <p class="card-content">
-          Copica contains a collections of copy number derived from mass spectrometry analysis of deep profiling proteomics obtained using proteomics ruler extension from Perseus proteomics data analysis suite.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <a mat-button type="button" href="https://copica.proteo.info/" target="_blank">Go to</a>
-        <a mat-button type="button" href="https://github.com/noatgnu/copica" target="_blank">GitHub</a>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card class="tool-card">
-      <mat-card-header>
-        <mat-card-title>UniProt Web Parser</mat-card-title>
-        <mat-card-subtitle>A Python package for querying sequence data from the UniProt biosequence database through its REST API</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="assets/uniprotparser.png" alt="Logo of Copica" class="tool-card-image">
-      <mat-card-content>
-        <p class="card-content">
-          The package is simple and can either choose to query data as fasta or in tabulated text form with or without all isoforms. For a synchronous workflow, the tool use Python requests module while aiohttp is used in case of asynchronous integration.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <a mat-button type="button" href="https://pypi.org/project/uniprotparser/" target="_blank">Pypi</a>
-        <a mat-button type="button" href="https://github.com/noatgnu/uniprotparser" target="_blank">GitHub</a>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+    </mat-grid-tile>
+    <mat-grid-tile>
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <p  class="footer-text">
+        Created by Toan Phung.
+      </p>
+    </mat-grid-tile>
+  </mat-grid-list>
+</footer>

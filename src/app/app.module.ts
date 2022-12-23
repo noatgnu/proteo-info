@@ -8,10 +8,13 @@ import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatButtonModule} from "@angular/material/button";
 import {MatGridListModule} from "@angular/material/grid-list";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import { StuffsComponent } from './stuffs/stuffs.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StuffsComponent
   ],
     imports: [
         BrowserModule,
@@ -20,7 +23,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
         MatCardModule,
         MatDividerModule,
         MatButtonModule,
-        MatGridListModule
+        MatGridListModule,
+        MatToolbarModule
     ],
   providers: [],
   bootstrap: [AppComponent]
