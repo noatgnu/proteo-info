@@ -1,5 +1,14 @@
 <mat-toolbar color="warn">
-  <mat-toolbar-row></mat-toolbar-row>
+  <span class="spacer"></span>
+  <a type="button" routerLink="" href="" mat-icon-button aria-label="Home">
+    <mat-icon>home</mat-icon>
+  </a>
+  <a type="button" routerLink="about-me" href="" mat-icon-button aria-label="Home">
+    <mat-icon>badge</mat-icon>
+  </a>
+  <a type="button" href="mailto: toan.phung@proteo.info" mat-icon-button aria-label="Send contact email">
+    <mat-icon>contact_mail</mat-icon>
+  </a>
 </mat-toolbar>
 <div class="banner-image">
   <div class="banner-text">
@@ -9,21 +18,21 @@
 </div>
 <mat-divider></mat-divider>
 <div class="page-body">
-  <app-stuffs></app-stuffs>
+  <router-outlet></router-outlet>
 </div>
 <mat-divider></mat-divider>
 <footer class="footer-section">
   <mat-grid-list cols="3" rowHeight="100px">
     <mat-grid-tile>
-
-    </mat-grid-tile>
-    <mat-grid-tile>
-
-    </mat-grid-tile>
-    <mat-grid-tile>
       <p  class="footer-text">
-        Created by Toan Phung.
+        Created by <b>Toan Phung</b>.
       </p>
+    </mat-grid-tile>
+    <mat-grid-tile>
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+
     </mat-grid-tile>
   </mat-grid-list>
 </footer>
