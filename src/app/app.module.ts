@@ -12,12 +12,18 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { StuffsComponent } from './stuffs/stuffs.component';
 import {MatIconModule} from "@angular/material/icon";
 import { AboutMeComponent } from './about-me/about-me.component';
+import { PythonModulesComponent } from './python-modules/python-modules.component';
+import { WebApplicationComponent } from './web-application/web-application.component';
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
     AppComponent,
     StuffsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    PythonModulesComponent,
+    WebApplicationComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
     MatButtonModule,
     MatGridListModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

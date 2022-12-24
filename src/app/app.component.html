@@ -1,4 +1,7 @@
 <mat-toolbar color="warn">
+  <button mat-icon-button>
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+  </button>
   <span class="spacer"></span>
   <a type="button" routerLink="" href="" mat-icon-button aria-label="Home">
     <mat-icon>home</mat-icon>
@@ -10,16 +13,27 @@
     <mat-icon>contact_mail</mat-icon>
   </a>
 </mat-toolbar>
-<div class="banner-image">
-  <div class="banner-text">
-    <h5 class="banner-main-text"><b>Proteoinformatics</b></h5>
-    <b>Your informatics resource for the proteome.</b>
-  </div>
-</div>
-<mat-divider></mat-divider>
-<div class="page-body">
-  <router-outlet></router-outlet>
-</div>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a mat-list-item (click)="scrollTo('web-application', sidenav)">Web Applications</a>
+      <a mat-list-item (click)="scrollTo('python-modules', sidenav)">Python Packages</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="banner-image">
+      <div class="banner-text">
+        <h5 class="banner-main-text"><b>Proteoinformatics</b></h5>
+        <b>Your informatics resource for the proteome.</b>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="page-body">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
 <mat-divider></mat-divider>
 <footer class="footer-section">
   <mat-grid-list cols="3" rowHeight="100px">

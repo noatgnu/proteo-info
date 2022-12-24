@@ -1,0 +1,76 @@
+<mat-toolbar-row id="python-modules">
+  <h2 style="color: white"><b>Python Packages and Modules</b></h2>
+</mat-toolbar-row>
+<mat-grid-list cols="3" rowHeight="300px">
+  <mat-grid-tile>
+    <mat-card class="tool-card">
+      <mat-card-header>
+        <mat-card-title>sequal</mat-card-title>
+        <mat-card-subtitle>A Python package for all your amino acid sequence parsing need</mat-card-subtitle>
+        <img mat-card-sm-image src="assets/sequal.png" alt="Logo of Sequal" class="tool-card-image">
+      </mat-card-header>
+      <mat-card-content>
+        <p class="card-content">
+          Sequal can be used for reading and formatting protein sequences with and without modifications whether or not they are placed as suffix or prefix to the amino acid residue. With it there is also a minimal support for certain Mass Spectrometry related task within the package.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button type="button" href="https://github.com/noatgnu/sequal" target="_blank">GitHub</a>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="tool-card">
+      <mat-card-header>
+        <mat-card-title>UniProt Web Parser</mat-card-title>
+        <mat-card-subtitle>A Python package for querying sequence data from the UniProt biosequence database through its REST API</mat-card-subtitle>
+        <img mat-card-sm-image src="assets/uniprotparser.png" alt="Logo of uniprotparser" class="tool-card-image">
+      </mat-card-header>
+      <mat-card-content>
+        <p class="card-content">
+          The package is simple and can either choose to query data as fasta or in tabulated text form with or without all isoforms. For a synchronous workflow, the tool use Python requests module while aiohttp is used in case of asynchronous integration.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button type="button" href="https://pypi.org/project/uniprotparser/" target="_blank">Pypi</a>
+        <a mat-button type="button" href="https://github.com/noatgnu/uniprotwebparser" target="_blank">GitHub</a>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="tool-card">
+      <mat-card-header>
+        <mat-card-title>DiannPy</mat-card-title>
+        <mat-card-subtitle>A Python package for producing additional reports from Diann analysis</mat-card-subtitle>
+        <img mat-card-sm-image src="assets/diannpy.png" alt="Logo of DiannPy" class="tool-card-image">
+      </mat-card-header>
+      <mat-card-content>
+        <p class="card-content">
+          The package use information provided by Diann in couple with sample condition label to produce additional plots and produce mapping of each ptm from peptides to those of the original sequence.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button type="button" href="https://pypi.org/project/diannpy/" target="_blank">Pypi</a>
+        <a mat-button type="button" href="https://github.com/noatgnu/dq" target="_blank">GitHub</a>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="tool-card">
+      <mat-card-header>
+        <mat-card-title>Proteomic Ruler</mat-card-title>
+        <mat-card-subtitle>A Python package for calculating copy number of protein content in deep profiling proteomics experiment from mass spectrometry data</mat-card-subtitle>
+        <img mat-card-sm-image src="assets/proteomicruler.png" alt="Logo of proteomic ruler" class="tool-card-image">
+      </mat-card-header>
+      <mat-card-content>
+        <p class="card-content">
+          The package is a direct adaptation of the same algorithm used by a plugin of the same name in Perseus proteomics analysis suite for calculation of copy number based on amount of histone within the sample.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button type="button" href="https://pypi.org/project/proteomicRuler/" target="_blank">Pypi</a>
+        <a mat-button type="button" href="https://github.com/noatgnu/proteomicRuler" target="_blank">GitHub</a>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
