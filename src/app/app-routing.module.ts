@@ -5,11 +5,15 @@ import {AboutMeComponent} from "./about-me/about-me.component";
 
 const routes: Routes = [
   {
-    path: "", component: StuffsComponent
+    path: "home", component: StuffsComponent
+  },
+  {
+    path: "home/:page", component: StuffsComponent
   },
   {
     path: "about-me", component: AboutMeComponent
-  }
+  },
+  {path: "**", redirectTo:"home"}
 ];
 
 @NgModule({

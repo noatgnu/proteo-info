@@ -3,7 +3,7 @@
     <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
   </button>
   <span class="spacer"></span>
-  <a type="button" routerLink="" href="" mat-icon-button aria-label="Home">
+  <a type="button" routerLink="home" href="" mat-icon-button aria-label="Home">
     <mat-icon>home</mat-icon>
   </a>
   <a type="button" routerLink="about-me" href="" mat-icon-button aria-label="Home">
@@ -16,8 +16,8 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
     <mat-nav-list>
-      <a mat-list-item (click)="scrollTo('web-application', sidenav)">Web Applications</a>
-      <a mat-list-item (click)="scrollTo('python-modules', sidenav)">Python Packages</a>
+      <a mat-list-item routerLink="home/web-application" (click)="sidenav.toggle()">Web Applications</a>
+      <a mat-list-item routerLink="home/python-modules" (click)="sidenav.toggle()">Python Packages</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
