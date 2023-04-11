@@ -16,6 +16,7 @@ import { PythonModulesComponent } from './python-modules/python-modules.componen
 import { WebApplicationComponent } from './web-application/web-application.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
+import { NodeModulesComponent } from './node-modules/node-modules.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MatListModule} from "@angular/material/list";
     StuffsComponent,
     AboutMeComponent,
     PythonModulesComponent,
-    WebApplicationComponent
+    WebApplicationComponent,
+    NodeModulesComponent
   ],
   imports: [
     BrowserModule,
