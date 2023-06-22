@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "info.proteo.curtain",
+                 "sha256_cert_fingerprints": ["A6:18:2A:3E:AA:F2:CD:26:8C:68:8B:4E:AE:49:46:CD:11:3E:7C:B8:B0:C7:98:AA:22:B2:72:15:05:31:59:A6"] }
+  }]
