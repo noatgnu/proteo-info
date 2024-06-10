@@ -13,8 +13,8 @@
     <mat-icon>contact_mail</mat-icon>
   </a>
 </mat-toolbar>
-<mat-sidenav-container>
-  <mat-sidenav #sidenav>
+<mat-sidenav-container autosize>
+  <mat-sidenav #sidenav mode="side">
     <mat-nav-list>
       <a mat-list-item routerLink="home/web-application" (click)="sidenav.toggle()">Web Applications</a>
       <a mat-list-item routerLink="home/python-modules" (click)="sidenav.toggle()">Python Packages</a>
