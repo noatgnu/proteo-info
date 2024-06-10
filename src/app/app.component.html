@@ -1,19 +1,6 @@
-<mat-toolbar color="warn">
-  <button mat-icon-button>
-    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-  </button>
-  <span class="spacer"></span>
-  <a type="button" routerLink="home" href="" mat-icon-button aria-label="Home">
-    <mat-icon>home</mat-icon>
-  </a>
-  <!--<a type="button" routerLink="about-me" href="" mat-icon-button aria-label="Home">
-    <mat-icon>badge</mat-icon>
-  </a>-->
-  <a type="button" href="mailto: toan.phung@proteo.info" mat-icon-button aria-label="Send contact email">
-    <mat-icon>contact_mail</mat-icon>
-  </a>
-</mat-toolbar>
+
 <mat-sidenav-container autosize>
+
   <mat-sidenav #sidenav mode="side">
     <mat-nav-list>
       <a mat-list-item routerLink="home/web-application" (click)="sidenav.toggle()">Web Applications</a>
@@ -22,6 +9,21 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
+    <mat-toolbar color="warn">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="spacer"></span>
+      <a type="button" routerLink="home" href="" mat-icon-button aria-label="Home">
+        <mat-icon>home</mat-icon>
+      </a>
+      <!--<a type="button" routerLink="about-me" href="" mat-icon-button aria-label="Home">
+        <mat-icon>badge</mat-icon>
+      </a>-->
+      <a type="button" href="mailto: toan.phung@proteo.info" mat-icon-button aria-label="Send contact email">
+        <mat-icon>contact_mail</mat-icon>
+      </a>
+    </mat-toolbar>
     <div class="banner-image">
       <div class="banner-text">
         <h5 class="banner-main-text"><b>Proteoinformatics</b></h5>
