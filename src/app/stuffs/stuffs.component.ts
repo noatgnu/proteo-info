@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
-  selector: 'app-stuffs',
-  templateUrl: './stuffs.component.html',
-  styleUrls: ['./stuffs.component.scss']
+    selector: 'app-stuffs',
+    templateUrl: './stuffs.component.html',
+    styleUrls: ['./stuffs.component.scss'],
+    standalone: false
 })
 export class StuffsComponent implements OnInit {
 
