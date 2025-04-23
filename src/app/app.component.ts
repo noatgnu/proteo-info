@@ -12,7 +12,7 @@ export class AppComponent {
 
 
   constructor(private route: ActivatedRoute) {
-    this.route.params.subscribe(data => {
+    this.route.params.subscribe((data) => {
       console.log(data)
     })
   }
